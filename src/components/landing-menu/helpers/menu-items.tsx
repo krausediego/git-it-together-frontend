@@ -12,8 +12,4 @@ export const landingMenuItems: LandingMenuItemsProps[] = [
     name: "Como funciona",
     section: "how-does-it-work",
   },
-  {
-    name: "Privacidade",
-    section: "privacy",
-  },
 ];
