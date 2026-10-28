@@ -9,7 +9,7 @@ export function LandingHeader() {
   const navigate = useNavigate();
 
   return (
-    <div className="container mx-auto py-20 grid grid-cols-2 gap-12">
+    <div className="container mx-auto py-20 grid grid-cols-1 md:grid-cols-2 gap-12">
       <div className="flex flex-col gap-8 max-w-xl">
         <span className="text-muted-foreground font-mono text-sm">
           PARA DEVS QUE QUEREM CONSTÂNCIA
