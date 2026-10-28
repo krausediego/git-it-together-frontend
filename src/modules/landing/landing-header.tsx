@@ -3,8 +3,11 @@ import { Avatar, AvatarFallback, AvatarGroup } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { useNavigate } from "@tanstack/react-router";
 
 export function LandingHeader() {
+  const navigate = useNavigate();
+
   return (
     <div className="container mx-auto py-20 grid grid-cols-2 gap-12">
       <div className="flex flex-col gap-8 max-w-xl">
@@ -22,7 +25,7 @@ export function LandingHeader() {
         </p>
 
         <div className="flex gap-4">
-          <Button size="lg">
+          <Button size="lg" onClick={() => navigate({ to: "/sign-in" })}>
             <GitHubLogoIcon />
             Entrar com Github
           </Button>
