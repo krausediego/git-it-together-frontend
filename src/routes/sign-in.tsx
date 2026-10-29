@@ -14,7 +14,7 @@ function RouteComponent() {
   const handleSignIn = async () => {
     const { error } = await authClient.signIn.social({
       provider: "github",
-      callbackURL: "http://localhost:5173/sign-in",
+      callbackURL: "http://localhost:5173/dashboard",
     });
 
     if (error) {
